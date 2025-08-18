@@ -1,0 +1,23 @@
+body {
+  background-color: #FFFFFF;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.quiz-link {
+  color: #f97316; /* Tailwind 的 text-orange-500 對應顏色 */
+  text-decoration: underline;
+  font-weight: 600; /* font-semibold */
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.quiz-link:hover {
+  color: #ea580c; /* Tailwind 的 hover:text-orange-600 對應顏色 */
+}
