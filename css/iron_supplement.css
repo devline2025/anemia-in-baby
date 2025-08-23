@@ -1,23 +1,46 @@
-body {
-  background-color: #FFFFFF;
+.slider-wrapper {
+  overflow: hidden;       
+  margin-bottom: 2rem;     
 }
 
-.header-row {
+.image-slider {
+  display: flex;                   
+  overflow-x: auto;                 
+  scroll-snap-type: x mandatory;    
+  -webkit-overflow-scrolling: touch; 
+  padding-bottom: 0.1rem;             
+  gap: 1.5rem;                  
+}
+
+.video-wrapper {
+  aspect-ratio: 16 / 9;   
+  width: 90%;        
+  max-width: 48rem;      
+  margin: 0 auto 1.5rem;   
+}
+
+.video-frame {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;  
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1), 
+              0 2px 4px rgba(0,0,0,0.06); 
+}
+
+.quiz-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; 
   margin-bottom: 1.5rem;
-  gap: 1rem;
 }
 
 .quiz-link {
-  color: #f97316; /* Tailwind 的 text-orange-500 對應顏色 */
+  color: #f97316; 
   text-decoration: underline;
-  font-weight: 600; /* font-semibold */
+  font-weight: 600;
   transition: color 0.3s ease;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .quiz-link:hover {
-  color: #ea580c; /* Tailwind 的 hover:text-orange-600 對應顏色 */
+  color: #ea580c;
 }

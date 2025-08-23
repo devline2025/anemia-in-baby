@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>嬰幼兒貧血</title>
-  
-  <link rel="stylesheet" href="./css/index.css">
   <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css" rel="stylesheet">
-
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/list.css">  
+  <link rel="stylesheet" href="./css/head.css">
+  <link rel="stylesheet" href="./css/base.css">
+
 </head>
+
 <body>
-  <div class="div">
-    <h1 class="text-2xl font-bold text-center mb-6">嬰幼兒貧血</h1>
+  <div class="content-box">
 
-    <a href="./html/iron_deficiency.html" class="block mb-4">
-      <div class="botton-one">
-        六個月後容易缺鐵？<br>必知的風險提醒
+    <input type="checkbox" id="toggler" hidden>
+    <label for="toggler">
+      <div class="head-div">
+        <img src="./src/icon/title.jpg" class="title">
+        <div class="menu-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+    </label>
+
+    <div class="menu-overlay"></div>
+    <div class="menu-items">
+      <ul>
+        <li>嬰幼兒貧血</li>
+        <ul>
+          <li><a href="./html/iron_deficiency.html">六個月後容易缺鐵？<br>必知的風險提醒</a></li>
+          <li><a href="./html/iron_supplement_guide.html">寶寶補鐵全攻略<br>吃對食物氣色好</a></li>          
+        </ul>
+      </ul>
+    </div>
+
+    <h1 class="heading">嬰幼兒貧血</h1>
+    <a class="botton-one" href="./html/iron_deficiency.html">
+      六個月後容易缺鐵？<br>必知的風險提醒
     </a>
-
-    <a href="./html/iron_supplement_guide.html" class="block mb-4">
-      <div class="botton-one">
-        寶寶補鐵全攻略<br>吃對食物氣色好！
-      </div>
-    </a>    
-
+    
+    <a class="botton-one" href="./html/iron_supplement_guide.html">
+      寶寶補鐵全攻略<br>吃對食物氣色好
+    </a>
   </div>
 </body>
 </html>
