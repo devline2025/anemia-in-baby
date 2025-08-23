@@ -93,6 +93,7 @@
   width: 100%;
   transform: scaleX(0);
   position: absolute;
+  z-index: 900;
 }
 
 #toggler:checked ~ .menu-overlay{
